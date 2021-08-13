@@ -6,8 +6,6 @@
 #include <string.h>
 #include <stdbool.h>
 
-// The following definitions for node_t and queue_t were adapted from the Zybooks LA 10.11.1 Instructions
-
 typedef struct node {
   char * data;
   struct node * next;
@@ -17,8 +15,6 @@ typedef struct {
   node_t * head;
   node_t * tail;
 } queue_t;
-
-// The following functions definitions were adapted from the Zybooks LA 10.11.1 Instructions 
 
 void
 queue_initialize (queue_t * queue);
