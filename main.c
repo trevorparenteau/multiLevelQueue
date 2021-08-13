@@ -3,8 +3,6 @@
 #define MAX_ENTRY 63
 
 int main(int argc, char* argv[]) {
-
-   /* Type your code here. */
    
    if (argc < 2){
       printf("ERROR: Requires number of queues\n");
