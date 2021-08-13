@@ -1,13 +1,9 @@
 #include "queue.h"
 
-// queue_initialize has the same implementation as written in CA 10.9.1 written by Trevor and Jay
-
 void queue_initialize (queue_t * queue){
    queue->head = NULL;
    queue->tail = NULL;
 }
-
-// queue_empty has the same implementation as written in CA 10.9.1 written by Trevor and Jay
 
 bool
 queue_empty (const queue_t * queue){
@@ -16,9 +12,6 @@ queue_empty (const queue_t * queue){
    }
    else return false;
 }
-
-
-// queue_enqueue has the same implementation as written in CA 10.9.1 written by Trevor and Jay
 
 bool queue_enqueue (queue_t * queue, char * item){
    node_t* newNode = (node_t*)malloc(sizeof(node_t));
@@ -37,8 +30,6 @@ bool queue_enqueue (queue_t * queue, char * item){
    return true;
 }
 
-
-// queue_dequeue has the same implementation as written in CA 10.9.1 written by Trevor and Jay
 
 char * queue_dequeue (queue_t * queue){
    if (queue_empty(queue)){
