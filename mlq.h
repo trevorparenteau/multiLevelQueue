@@ -3,14 +3,10 @@
 
 #include "queue.h"
 
-// The following definition for mlq_t was adapted from the Zybooks LA 10.11.1 Instructions 
-
 typedef struct {
   queue_t * queues;
   int size;
 } mlq_t;
-
-// The following function definitions were adapted from the Zybooks LA 10.11.1 Instructions 
 
 bool
 mlq_initialize (mlq_t * mlqueue, int size);
